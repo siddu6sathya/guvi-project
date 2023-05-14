@@ -1,8 +1,11 @@
-version: '3.9'
+version: "3.8"
 
 services:
-  web:
-    build: .
+  webapp:
+    stdin_open: "true"
+    tty: "true"
+    image: react:v1
+    container_name: reactjs
     ports:
       - "80:80"
 
